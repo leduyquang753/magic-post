@@ -1,0 +1,1 @@
+export const apiUrl = "https://192.168.1.64:4000";
