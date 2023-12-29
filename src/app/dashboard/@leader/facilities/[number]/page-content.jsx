@@ -250,7 +250,8 @@ export default function FacilityPageContent({params}) {
 						Thử lại
 					</Button></div>
 				</>
-				: <LineChart dateUnit={statisticsData.dateUnit} dataUnit="gói hàng" data={statisticsData}/>
+				: statisticsData &&
+					<LineChart dateUnit={statisticsData.dateUnit} dataUnit="gói hàng" data={statisticsData}/>
 				}
 			</Card>
 			<Card className="mb-4">

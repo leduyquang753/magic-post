@@ -18,12 +18,14 @@ export default async function getAccountStatus(cookies) {
 		});
 		if (response.ok) {
 			const data = await response.json();
+			console.log(data);
 			return {
 				username: data.username,
 				fullName: data.fullName,
 				role: roleMap[data.role]
 			};
 		} else {
+			console.log(await response.json());
 			return {role: "notLoggedIn"};
 		}
 	} catch (error) {
