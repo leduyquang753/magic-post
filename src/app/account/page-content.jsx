@@ -37,11 +37,11 @@ import {apiUrl} from "@/common/config";
 import {roleMap} from "@/common/account-status";
 
 const roleNameMap = {
-	officeEmployee: "Office employee",
-	warehouseEmployee: "Warehouse employee",
-	officeManager: "Office manager",
-	warehouseManager: "Warehouse manager",
-	leader: "Leader"
+	officeEmployee: "Nhân viên điểm giao dịch",
+	warehouseEmployee: "Nhân viên điểm tập kết",
+	officeManager: "Trưởng điểm giao dịch",
+	warehouseManager: "Trưởng điểm tập kết",
+	leader: "Lãnh đạo"
 };
 
 async function getAccountStatus(url) {
